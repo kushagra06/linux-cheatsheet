@@ -47,6 +47,9 @@ ls <directory path> -1 | wc -l
 ### Find all files larger than a given size
 
 ```bash
+# Find all the large files (if autocomplete doesn't work)
+find / -xdev -type f -size +100M
+
 # find all files "-type f" in the current directory "."
 # of size greater than 20MB and list the files using "ls -lh"
 # print the file size "$5" and the whole file name "$0,2"
